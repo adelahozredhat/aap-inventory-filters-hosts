@@ -1,13 +1,13 @@
-plugin: vmware.vmware.vms
-hostname: vcenter.dominio.local
-username: "usuario@vsphere.local"
-password: "contraseña"
-validate_certs: false  # Usar "true" en un entorno de producción con certificados válidos
-with_tags: true
-keyed_groups:
-  - key: guest_id
-    separator: ""
-    prefix: "os_"
-  - key: folder
-    separator: ""
-    prefix: "folder_"
+- plugin: vmware.vmware.vms
+  hostname: vcenter.dominio.local
+  username: "usuario@vsphere.local"
+  password: "contraseña"
+  validate_certs: false  # Usar "true" en un entorno de producción con certificados válidos
+  with_tags: true
+  keyed_groups:
+    - key: guest_id
+      separator: ""
+      prefix: "os_"
+    - key: folder
+      separator: ""
+      prefix: "folder_"
