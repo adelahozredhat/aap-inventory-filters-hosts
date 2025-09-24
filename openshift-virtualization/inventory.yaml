@@ -1,4 +1,5 @@
+---
 plugin: redhat.openshift_virtualization.kubevirt
-namespaces:
-  - openshift-cnv
-validate_certs: false
+connections:
+  - use_service: False
+    validate_certs: False
