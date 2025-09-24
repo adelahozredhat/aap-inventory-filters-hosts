@@ -1,0 +1,14 @@
+plugin: theforeman.foreman.foreman
+url: "https://satellite.dominio.local"
+username: "usuario_satellite"
+password: "contraseña"
+verify_ssl: true
+includes:
+  - hosts
+keyed_groups:
+  - key: hostgroup_name
+    separator: ""
+    prefix: "hg_"
+  - key: os_name
+    separator: ""
+    prefix: "os_"
